@@ -28,14 +28,21 @@
 
 # 04 - Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-numerador = int(input("Digite o primeiro número: "))
-dividendo = int(input("Digite o segundo número: "))
+# numerador = int(input("Digite o primeiro número: "))
+# dividendo = int(input("Digite o segundo número: "))
 
-divisao = numerador // dividendo
+# divisao = numerador // dividendo
 
-print(divisao)
+# print(divisao)
 
 # 05 -Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+
+base = int(input("digite um número: "))
+expoente = 2
+
+potenciacao = base ** expoente
+
+print(potenciacao)
 
 #Números de Ponto Flutuante (float)
 # 06 - Escreva um programa que receba dois números flutuantes e realize sua adição.
