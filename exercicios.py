@@ -11,15 +11,30 @@
 
 # 02 - Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
-div_1 = int(input("Digite um número: "))
-dividendo = 5
+# div_1 = int(input("Digite um número: "))
+# dividendo = 5
 
-resultado_da_divisao = div_1 // dividendo
+# resultado_da_divisao = div_1 // dividendo
 
-print(resultado_da_divisao)
+# print(resultado_da_divisao)
 
 # 03 - Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+
+# num1 = int(input("Digite o primeiro número inteiro: "))
+# num2 = int(input("Digite o segundo número inteiro: "))
+# resultado_multiplicacao = num1 * num2
+
+# print("O resultado é:", resultado_multiplicacao)
+
 # 04 - Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+
+numerador = int(input("Digite o primeiro número: "))
+dividendo = int(input("Digite o segundo número: "))
+
+divisao = numerador // dividendo
+
+print(divisao)
+
 # 05 -Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
 #Números de Ponto Flutuante (float)
