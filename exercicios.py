@@ -74,14 +74,19 @@
 
 #atualização do git
 
-## 09 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# ## 09 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 
-celsus = float(input("Digite o valor do Celsus: "))
-calculo_far = (celsus * 9/5) + 32
+# celsus = float(input("Digite o valor do Celsus: "))
+# calculo_far = (celsus * 9/5) + 32
 
-print(f"{celsus}Cº é igual a {calculo_far}Fº")
+# print(f"{celsus}Cº é igual a {calculo_far}Fº")
 
 ## 10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+
+raio = float(input("digite o valor do raio: "))
+area = 3.14159 * raio ** 2
+
+print (f"o valor da area do circulo é {round(area)}")
 
 ## #Strings (str)
 ## 11 - Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
