@@ -63,18 +63,24 @@
 
 # print(calculo_media)
 
-## 08 - Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+# ## 08 - Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 
-pot_1 = float(input("Digite o número da base: "))
-exp_2 = float(input("Digite o número do expoente: "))
+# pot_1 = float(input("Digite o número da base: "))
+# exp_2 = float(input("Digite o número do expoente: "))
 
-calculo_potencia = (pot_1**exp_2)
+# calculo_potencia = (pot_1**exp_2)
 
-print(calculo_potencia)
+# print(calculo_potencia)
 
 #atualização do git
 
 ## 09 - Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+celsus = float(input("Digite o valor do Celsus: "))
+calculo_far = (celsus * 9/5) + 32
+
+print(f"{celsus}Cº é igual a {calculo_far}Fº")
+
 ## 10 - Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 ## #Strings (str)
