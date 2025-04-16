@@ -105,12 +105,20 @@
 
 ## 13 - Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 
-str_3 = str(input("Digite o texto aqui: "))
-print_str_3 = str_3.strip()
+# str_3 = str(input("Digite o texto aqui: "))
+# print_str_3 = str_3.strip()
 
-print(print_str_3)
+# print(print_str_3)
 
 ## 14 - Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+
+str_4 = str(input("Digite uma data: "))
+
+dia, mes, ano = str_4.split("/")
+print(dia)
+print(mes)
+print(ano)
+
 ## 15 - Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
 ## #Booleanos (bool)
