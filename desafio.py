@@ -33,6 +33,49 @@ Esses exercícios aumentam progressivamente em dificuldade e abordam situações
 # # Use try-except para lidar com divisões por zero e entradas não numéricas. Utilize if-elif-else para realizar 
 # # a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
 
+def soma(n1, n2):
+    return n1 + n2
+
+def subtracao(n1, n2):
+    return n1 - n2
+
+def multiplicacao(n1, n2):
+    return n1 * n2
+
+def divisao(n1, n2):
+    try:
+        return n1 / n2
+    except ZeroDivisionError:
+        return "Erro: Divisão por zero não é permitida."
+
+print("Opções de operações matemáticas:\n"
+      "+. Soma\n"
+      "-. Subtração\n"
+      "*. Multiplicação\n"
+      "/. Divisão\n")
+
+sel = input("Selecione a operação (+, -, *, /): ")
+
+# Exibe a operação escolhida
+print(f"Você escolheu a operação: {sel}")
+
+try:
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+
+    if sel == "+":
+        print(f"O resultado de {n1} + {n2} = {soma(n1, n2)}")
+    elif sel == "-":
+        print(f"O resultado de {n1} - {n2} = {subtracao(n1, n2)}")
+    elif sel == "*":
+        print(f"O resultado de {n1} * {n2} = {multiplicacao(n1, n2)}")
+    elif sel == "/":
+        print(f"O resultado de {n1} / {n2} = {divisao(n1, n2)}")
+    else:
+        print("Operação inválida. Tente novamente.")
+except ValueError:
+    print("Erro: Por favor, insira números válidos.")
+
 # # Exercício 24: Classificador de Números
 # # Escreva um programa que solicite ao usuário para digitar um número. 
 # # Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else para classificar o número 
