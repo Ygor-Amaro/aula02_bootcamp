@@ -145,11 +145,18 @@
 
 ## 18 - Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
-valor1 = True
-valor2 = False
+# valor1 = True
+# valor2 = False
 
-resultado_not = not valor1
-print("Resultado do NOT lógico:", resultado_not)
+# resultado_not = not valor1
+# print("Resultado do NOT lógico:", resultado_not)
 
 ## 19 - Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+num1 = 5
+num2 = 5
+
+resultado_igualdade = (num1 == num2)
+print("Resultado da igualdade:", resultado_igualdade)
+
 ## 20 -Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
