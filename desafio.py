@@ -33,53 +33,66 @@ Esses exercícios aumentam progressivamente em dificuldade e abordam situações
 # # Use try-except para lidar com divisões por zero e entradas não numéricas. Utilize if-elif-else para realizar 
 # # a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
 
-def soma(n1, n2):
-    return n1 + n2
+# def soma(n1, n2):
+#     return n1 + n2
 
-def subtracao(n1, n2):
-    return n1 - n2
+# def subtracao(n1, n2):
+#     return n1 - n2
 
-def multiplicacao(n1, n2):
-    return n1 * n2
+# def multiplicacao(n1, n2):
+#     return n1 * n2
 
-def divisao(n1, n2):
-    try:
-        return n1 / n2
-    except ZeroDivisionError:
-        return "Erro: Divisão por zero não é permitida."
+# def divisao(n1, n2):
+#     try:
+#         return n1 / n2
+#     except ZeroDivisionError:
+#         return "Erro: Divisão por zero não é permitida."
 
-print("Opções de operações matemáticas:\n"
-      "+. Soma\n"
-      "-. Subtração\n"
-      "*. Multiplicação\n"
-      "/. Divisão\n")
+# print("Opções de operações matemáticas:\n"
+#       "+. Soma\n"
+#       "-. Subtração\n"
+#       "*. Multiplicação\n"
+#       "/. Divisão\n")
 
-sel = input("Selecione a operação (+, -, *, /): ")
+# sel = input("Selecione a operação (+, -, *, /): ")
+# print(f"Você escolheu a operação: {sel}")
 
-# Exibe a operação escolhida
-print(f"Você escolheu a operação: {sel}")
+# try:
+#     n1 = int(input("Digite o primeiro número: "))
+#     n2 = int(input("Digite o segundo número: "))
 
-try:
-    n1 = int(input("Digite o primeiro número: "))
-    n2 = int(input("Digite o segundo número: "))
-
-    if sel == "+":
-        print(f"O resultado de {n1} + {n2} = {soma(n1, n2)}")
-    elif sel == "-":
-        print(f"O resultado de {n1} - {n2} = {subtracao(n1, n2)}")
-    elif sel == "*":
-        print(f"O resultado de {n1} * {n2} = {multiplicacao(n1, n2)}")
-    elif sel == "/":
-        print(f"O resultado de {n1} / {n2} = {divisao(n1, n2)}")
-    else:
-        print("Operação inválida. Tente novamente.")
-except ValueError:
-    print("Erro: Por favor, insira números válidos.")
+#     if sel == "+":
+#         print(f"O resultado de {n1} + {n2} = {soma(n1, n2)}")
+#     elif sel == "-":
+#         print(f"O resultado de {n1} - {n2} = {subtracao(n1, n2)}")
+#     elif sel == "*":
+#         print(f"O resultado de {n1} * {n2} = {multiplicacao(n1, n2)}")
+#     elif sel == "/":
+#         print(f"O resultado de {n1} / {n2} = {divisao(n1, n2)}")
+#     else:
+#         print("Operação inválida. Tente novamente.")
+# except ValueError:
+#     print("Erro: Por favor, insira números válidos.")
 
 # # Exercício 24: Classificador de Números
 # # Escreva um programa que solicite ao usuário para digitar um número. 
 # # Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else para classificar o número 
 # # como "positivo", "negativo" ou "zero". Adicionalmente, identifique se o número é "par" ou "ímpar".
+
+try:
+    numero = int(input("Digite um número: "))
+    if numero > 0:
+        tipo = "Positivo"
+    elif numero < 0:
+        tipo = "Negativo"
+    else:
+        tipo = "Zero"
+
+    paridade = "Par" if numero % 2 == 0 else "Ímpar"
+
+    print(f"O número {numero} é {tipo} e {paridade}.")
+except ValueError:
+    print("Por favor, digite um número inteiro válido.")
 
 # # Exercício 25: Conversão de Tipo com Validação
 # # Crie um script que solicite ao usuário uma lista de números separados por vírgula. 
